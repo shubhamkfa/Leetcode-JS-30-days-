@@ -11,4 +11,14 @@ function pal(word){
 console.log(pal("A man, a plan, a canal: Panama"));
 
 
-//
+//Leetcode
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isPalindrome = function(s) {
+    let removechar= s.replace (/[^a-zA-Z0-9]/g,'').toLowerCase()
+    let str = removechar.split('').reverse().join('')
+    return removechar == str;
+};
