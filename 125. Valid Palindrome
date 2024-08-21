@@ -1,0 +1,14 @@
+function pal(word){
+    let palindrome = word.replace(/[^a-zA-Z0-9]/g,'').toLowerCase()
+    let result = palindrome.split('').reverse().join('')
+    // console.log(result);
+    
+    return palindrome==result 
+
+
+}
+
+console.log(pal("A man, a plan, a canal: Panama"));
+
+
+//
