@@ -1,0 +1,24 @@
+
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var reverse = function(x) {
+    
+    //store the number in variable first 
+    let copy = x
+    
+    //convert the number into string 
+    
+    x = parseInt(x.toString().split('').reverse().join(''))
+    
+    //we need to take care of constraints 
+    
+    if (x >= Math.pow (2,31)-1 || x <= Math.pow (-2,31) ){
+       return 0 ;
+    }
+    return copy<0?-Math.abs(x):x
+    
+    
+   
+};
