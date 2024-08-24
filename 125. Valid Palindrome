@@ -5,6 +5,9 @@ function pal(word){
     
     return palindrome==result 
 
+//for only printing the string 
+    return result;
+
 
 }
 
